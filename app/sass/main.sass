@@ -3,7 +3,8 @@
 @import "libs"
 @import "components/button"
 
-
+*
+  outline: 0 !important
 
 ::placeholder
 	text-align: center
@@ -29,6 +30,171 @@ body
 		&:required:valid
 			border-color: green
 
+.flex-s-beetwen
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+
+.header
+	background: url(../img/png/banner_bg.png) no-repeat 0% 0%
+	width: 100%
+	
+	.head
+		padding-top: 20px
+	.logo
+		width: 79px
+		height: 79px
+
+	.col-white
+		color: #fff
+
+	a 
+		text-decoration: none
+		outline: none
+		transition: all 0.3s
+
+	li 
+		list-style: none;
+		padding-left: 28px
+		letter-spacing: 1px
+
+	ul a:hover 
+		color: #587aa8
+
+	ul 
+		padding-top: 30px
+
+	.social_networks 
+		width: 100px
+
+	.instagram 
+		width: 20px
+		margin: 7px 0 0 7px
+
+	.telegram 
+		width: 20px
+		margin: 8px 0 0 6px
+
+	// .network_telegram, .network_instagram 
+	// 	width: 34px
+	// 	height: 34px
+	// 	border-radius: 50%
+	// 	margin-top: 10px
+	// 	transition: all 0.3s
+
+	// .network_telegram:hover, .network_instagram:hover
+	// 	background: #638fcc
+	// 	box-shadow: 0px 11px 18px 3px rgba(157,158,159,0.6)
+
+	button 
+		width: 185px
+		background: #638fcc
+		padding: 16px 0
+		border-radius: 20px
+		border: 1px solid #638fcc
+		transition: all 0.5s
+		box-shadow: 0px 13px 28px 0px rgba(114, 146, 177,0.6)
+
+	button:hover 
+		cursor: pointer
+
+	button:active 
+		border: 2px solid #3e5677
+		box-shadow: none
+
+	.button
+		text-align: center
+
+	h1
+		font-size: 97px
+		font-family: RobotoBold, sans-serif //Нужно подключить шрифт
+		text-align: center
+		margin: 23px 0 0
+		padding: 0
+		letter-spacing: 12px
+	
+	h3
+		font-size: 50px
+		font-family: RobotoRegular, sans-serif //Нужно подключить шрифт
+		text-align: center
+		margin: 0
+		padding: 0
+		letter-spacing: 6px
+
+	.title-h3
+		color: #587aa8
+		margin-top: 106px
+
+	.wrap 
+		width: 500px
+		margin: 0 auto
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+	.wrap p 
+		font-weight: bold
+		letter-spacing: 2px
+		margin-top: 40px
+		margin-bottom: 65px
+
+	.dot 
+		font-size: 48px
+		font-weight: bold
+		border-radius: 100%
+
+	.dot-in-block 
+		width: 260px
+		margin: 0 auto
+		padding: 0
+		height: 25px
+
+// Первая секция
+.about-us
+	padding: 133px 0
+	position: relative
+
+.our_history 
+	width: 548px
+	
+.our-statistics
+	width: 400px
+	position: absolute
+	top: 505px
+	left: 192px
+	background: #f3f3f3
+	padding: 30px 0 20px 0
+	font-size: 14px
+
+	.our-statistics div p
+		padding: 0
+		margin: 0
+
+	h4
+		color: #638fcc
+		font-size: 24px
+		margin: 0 auto
+
+.location-kpi 
+	margin-left: 40px
+	width: 72px
+
+.participant 
+	padding: 0 37px 0 0
+	width: 100px
+
+.our-help 
+	width: 148px
+
+	
+
+
+
+
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -45,7 +211,7 @@ b, strong
 .h2
 		font-size: 50px
 		position: relative
-		margin: 0
+		margin: 0 0 43px
 		line-height: 1
 		&::after
 			content: ''
@@ -55,6 +221,48 @@ b, strong
 			width: 48px
 			height: 2px
 			background-color: $text
+
+.values_bible 
+	background: url("../img/png/values_bible.png")
+	background-size: 334px 333px;
+	margin: 0 17px 0 24px
+	height: 333px
+
+
+.values_help
+	background: url("../img/png/values_help.png") no-repeat
+	height: 154px
+	min-width: 261px
+	background-size: 100% 100%;
+	
+
+.value_fun
+	background: url("../img/png/values_fun.png")
+	background-size: 100% 100%;
+	min-width: 261px
+	height: 158px
+	position: absolute
+	top: 175px
+	left: 373px
+
+.values_bible, .values_help, .value_fun
+	color: #fff;
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	font-weight: bold
+
+.position
+	position: relative
+
+
+.book-icon, .life-saver, .beach-ball, .delivery-truck, .trolley, .file, .loundery, .hot-air-balloon, .information
+	width: 28px
+	height: 28px
 
 @import "components/our-work"
 @import "components/our-help"
